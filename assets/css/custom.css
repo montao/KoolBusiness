@@ -196,7 +196,6 @@ small {
 	-webkit-box-shadow: inset 0px 3px 5px 0px rgba(0,0,0,0.2) !important;
 	-moz-box-shadow: inset 0px 3px 5px 0px rgba(0,0,0,0.2) !important;
 	box-shadow: inset 0px 3px 5px 0px rgba(0,0,0,0.2) !important;
-	box-shadow: outset 0px 3px 5px 0px rgba(0,0,0,0.2) !important;
 }
 .ui.inverted.subhead  {
 	background-color: #22a7f0 !important;
@@ -206,7 +205,6 @@ small {
 	-webkit-box-shadow: inset 0px 3px 5px 0px rgba(0,0,0,0.2) !important;
 	-moz-box-shadow: inset 0px 3px 5px 0px rgba(0,0,0,0.2) !important;
 	box-shadow: inset 0px 3px 5px 0px rgba(0,0,0,0.2) !important;
-	box-shadow: outset 0px 3px 5px 0px rgba(0,0,0,0.2) !important;
 	min-height: 250px;
 	padding: 1.5em 0;
 }
@@ -809,8 +807,8 @@ small {
     display: table-cell;
     vertical-align: bottom;
     height: 100px;
-    -ms-word-break: break-word;
     word-break: break-word;
+	-ms-word-break: break-word;
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
     hyphens: auto;
@@ -1154,7 +1152,6 @@ animated buttons - animate the text inside prev and next buttons
 	position: absolute;
 	color: #ffffff;
 	background-color: #21BA45;
-	background: linear-gradient(#21BA45 0%, #0bb132 100%);
 	padding: 2px 8px;
 	top: 0;
 	right: 0;
