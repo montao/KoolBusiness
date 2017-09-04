@@ -365,11 +365,11 @@
         <!--Scroll-To-Top End-->
     </div>
     <!--/Main Wrapper End-->
-    <!-- modal dialog -->
+    <!-- Modal Dialog -->
     <div class="ui modal">
         <i class="close icon"></i>
         <div class="header">E-mail Advertiser</div>
-        <form class="ui form emailAdvisor">
+        <form class="ui form email-advertiser" method="get" id="email_advertiser">
             <!-- modal-content -->
             <div class="content">
                 <div class="ui segment">
@@ -380,7 +380,7 @@
                         </div>
                         <div class="field">
                             <label>Mobile Number:</label>
-                            <input placeholder="Enter Mobile Number" type="number" name="mnumber">
+                            <input placeholder="Enter Mobile Number" type="tel" name="mnumber">
                         </div>
                         <div class="field">
                             <label>Email</label>
@@ -388,7 +388,7 @@
                         </div>
                         <div class="field">
                             <label>Message</label>
-                            <textarea rows="3" name="message"></textarea>
+                            <textarea placeholder="Please enter your message." rows="3" name="message"></textarea>
                         </div>
                     </div>
                 </div>
@@ -396,11 +396,37 @@
         </form>
         <!-- /.modal-content -->
         <div class="actions">
-            <div class="ui button">Cancel</div>
-            <div class="ui green button">Send</div>
+		    <div class="ui green ok button">Send</div>
+            <div class="ui cancel button">Cancel</div>
         </div>
     </div>
-    <!-- /.modal -->
+    <!-- /Modal Dialog -->
+	<!-- Modal Settings -->
+	<script type="text/JavaScript">
+		var aFunction = function()
+		{
+			//modal settings
+			$('.modal').modal({
+				detachable: true, 
+				closable: false, 
+				transition: 'fade up',
+				onApprove : function() {
+				  $('.ui.form').submit();
+				  return false;
+				},
+			});
+			$("#aBtn").on("click", function(){
+				//Resets form input fields
+				$('.ui.form').trigger("reset");
+				//Resets form error messages
+				$('.ui.form .field.error').removeClass( "error" );
+				$('.ui.form.error').removeClass( "error" );
+				$('.modal').modal('show');
+			});
+		}
+		$(document).ready( aFunction );
+	</script>
+	<!-- /Modal Settings  -->
 </body>
 
 </html>

@@ -344,4 +344,39 @@ $(document).ready(function () {
 				}
 			}
 		});
+	//Email Advertiser Validation
+	$('.ui.email-advertiser')
+		.form({
+			on: 'blur',
+			fields: {
+				name: {
+					identifier: 'name',
+					rules: [{
+						type: 'empty',
+						prompt: 'Please enter a name.'
+					}]
+				},
+				email: {
+					identifier: 'email',
+					rules: [{
+						type: 'email',
+						prompt: 'Please enter a valid e-mail.'
+					}]
+				},
+				mnumber: {
+					identifier: 'mnumber',
+					rules: [{
+						type: 'empty',
+						prompt: 'Please enter your mobile number.'
+					}]
+				},
+				message: {
+					identifier: 'message',
+					rules: [{
+						type: 'empty',
+						prompt: 'Please enter your message.'
+					}]
+				}
+			}
+		});		
 });
