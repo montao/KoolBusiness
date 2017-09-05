@@ -174,14 +174,7 @@ $(document).ready(function () {
 					identifier: 'name',
 					rules: [{
 						type: 'empty',
-						prompt: 'Please enter a name.'
-					}]
-				},
-				email: {
-					identifier: 'email',
-					rules: [{
-						type: 'email',
-						prompt: 'Please enter a valid e-mail.'
+						prompt: 'Please enter a username / email address.'
 					}]
 				},
 				mnumber: {
