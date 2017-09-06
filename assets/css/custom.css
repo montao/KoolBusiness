@@ -1226,3 +1226,33 @@ animated buttons - animate the text inside prev and next buttons
 .welcome-msg span {
 	color: #979e9e;
 }
+
+/* Success Message */
+.alert {
+    background-color: #f44336;
+	color: #ffffff;
+    width: 97%;
+    opacity: 1;
+    padding: 20px;
+    transition: opacity 0.6s;
+    margin: 0 auto 20px auto;
+}
+
+.alert.success {background-color: #4CAF50;}
+.alert.info {background-color: #15c49a;}
+.alert.warning {background-color: #ff9800;}
+
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: black;
+}
