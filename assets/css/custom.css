@@ -1256,3 +1256,44 @@ animated buttons - animate the text inside prev and next buttons
 .closebtn:hover {
     color: black;
 }
+
+/* My Account - Section CSS */
+.my_account_wrapper {
+	padding-top: 10px !important;
+	padding-bottom: 10px !important;
+}
+.my_account_wrapper .ui.menu {
+  border: 0;
+  box-shadow: none;
+}
+.my_account_wrapper .ui.menu .item {
+    padding: 0.92857143em 1.14285714em;
+}
+.menu_wrapper {
+	-webkit-box-shadow: 1px 0px 0px 0px rgba(238,238,238,1);
+	-moz-box-shadow: 1px 0px 0px 0px rgba(238,238,238,1);
+	box-shadow: 1px 0px 0px 0px rgba(238,238,238,1);	
+}
+.ui.text.container {
+    font-size: 14px;
+}
+.account_details  .label {
+	cursor: pointer;
+}
+.credit-cards {
+	position: relative;
+    top: 12px;
+}
+.space20 {
+	margin-top: 20px;
+}
+.space30 {
+	margin-top: 30px;
+}
+.ui.section.divider {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+.change-password {
+	overflow: hidden;
+}
