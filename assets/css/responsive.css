@@ -107,6 +107,10 @@
 		float: none !important;
 		width: 252px !important;
 	}
+	/***** My Account Section CSS ****/
+	.ui.vertical.menu {
+		width: auto;
+	}	
 }
 
 @media only screen and (min-width: 270px) and (max-width: 480px) {
