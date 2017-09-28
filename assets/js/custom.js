@@ -371,5 +371,17 @@ $(document).ready(function () {
 					}]
 				}
 			}
+		});
+		//My Account - Side Menu - Active Link JS
+		$('.ui.dropdown').dropdown();
+		$('.ui .item').on('click', function() {
+		   $('.ui .item').removeClass('active');
+		   $(this).addClass('active');
 		});		
+		//My Account - Payment Methods - Radio Button Toggle JS
+		$('.radioBtn').click(function() {
+			var target = $(this).data('target-id');
+			$('.payment_option').hide();
+			$('.payment_option[data-target="' + target + '"]').show();
+		});
 });
