@@ -110,7 +110,7 @@
 	/***** My Account Section CSS ****/
 	.ui.vertical.menu {
 		width: auto;
-	}	
+	}
 }
 
 @media only screen and (min-width: 270px) and (max-width: 480px) {
@@ -143,15 +143,15 @@
 		padding-right: 0 !important;
 	}
 }
-
-
-/***** Header Area ****/
-
-@media only screen and (min-width: 480px) and (max-width: 639px) {
-	.slide-cont {
-		width: 90%;
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+	.table_wrapper {
+		position: relative;
+		overflow-x: scroll;
+		overflow-y: hidden;
 	}
 }
+
+/***** Header Area ****/
 
 @media only screen and (min-width: 290px) and (max-width: 479px) {
 	.slide-cont {
@@ -159,6 +159,11 @@
 	}
 }
 
+@media only screen and (min-width: 480px) and (max-width: 639px) {
+	.slide-cont {
+		width: 90%;
+	}
+}
 
 /* Email Advertiser Model Box */
 
