@@ -91,15 +91,15 @@
             <div class="ui tablet stackable grid my_account_wrapper">
                 <div class="five wide tablet four wide computer column menu_wrapper">
                     <div class="menu-section">
-                        <div class="ui vertical menu">
+                        <div class="ui vertical menu sidemenu">
                             <div class="item"><strong>MY ACCOUNT</strong></div>
-                            <a class="item" href="#"><i class="browser outline icon"></i>My Ads</a>
-                            <a class="item" href="#"><i class="mail outline icon"></i>Messages</a>
+                            <a class="item" href="my-ads.html#my_ads"><i class="browser outline icon"></i>My Ads</a>
+                            <a class="item" href="messages.html#my_messages"><i class="mail outline icon"></i>Messages</a>
                             <a class="item" href="profile.html#profile"><i class="user icon"></i>Profile</a>
                             <a class="item" href="edit-profile.html#edit_profile"><i class="write icon"></i>Edit Profile</a>
                             <a class="item" href="change-password.html#change_password"><i class="unlock alternate icon"></i>Change Password</a>
                             <a class="item active" href="payments.html#payments"><i class="payment icon"></i>Payments</a>
-                            <a class="item" href="#"><i class="settings icon"></i>Advanced</a>
+                            <a class="item" href="deactivate-account.html#deactivate"><i class="settings icon"></i>Advanced</a>
                             <a class="item" href="#"><i class="external icon"></i>Signout</a>
                         </div>
                     </div>
@@ -118,7 +118,7 @@
 							</label>
                             </div>
                         </div>
-                        <div class="space20"></div>
+                        <div class="space30"></div>
                         <div class="field">
                             <div class="ui radio">
                                 <label class="label">
@@ -129,6 +129,17 @@
 							</label>
                             </div>
                         </div>
+                        <div class="space25"></div>
+                        <div class="field">
+                            <div class="ui radio">
+                                <label class="label">
+								<input class="radioBtn" type="radio" name="payments" data-target-id="3">
+								<a class="ui medium orange button">
+									<i class="bitcoin icon"></i>Bitcoin
+								</a>
+							</label>
+                            </div>
+                        </div>						
                     </div>
                     <div class="space30"></div>
                     <div class="ui segment payment_option" data-target="1">
@@ -214,6 +225,13 @@
 							<i class="paypal icon"></i>Pay with PayPal
 						</a>
                     </div>
+                    <div class="ui segment payment_option" data-target="3" style="display: none;">
+                        <h2>Bitcoin Currency:</h2>
+                        <p>Payment Method</p>
+                        <a href="https://bitcoin.org/en/" class="ui submit large orange button" target="_blank">
+							<i class="bitcoin icon"></i>Pay with Bitcoin
+						</a>
+                    </div>					
                     <!--/Payment Method Section-->
                 </div>
             </div>
