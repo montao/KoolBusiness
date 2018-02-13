@@ -14,6 +14,8 @@
     <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
     <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.css">
     <link rel="stylesheet" type="text/css" href="assets/css/owl.theme.min.css">
+	<!-- Include Quill CSS -->
+	<link href="https://cdn.quilljs.com/1.3.3/quill.snow.css" rel="stylesheet">
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/semantic.js"></script>
     <script src="assets/js/owl.carousel.js"></script>
@@ -93,7 +95,7 @@
         <!--Menu Area End-->
         <!--Master Head-->
         <div class="masthead-shadow">
-            <div class="ui inverted vertical subhead herohead center aligned segment">
+            <div class="ui inverted vertical sub_head herohead center aligned segment">
                 <div class="ui text container masthead-text">
                     <h2>CREATE YOUR <span>ADVERTISEMENT</span></h2>
                 </div>
@@ -106,7 +108,7 @@
             <div class="ui large breadcrumb">
                 <a class="section" href="index.html">KoolBusiness.com</a>
                 <i class="right chevron icon divider"></i>
-                <a class="section" href="insert-ad.html">Insert Ad</a>
+                <a class="section" href="insert-ad.html">Create Car Ad</a>
             </div>
             <!--/Breadcrumb-->
             <div class="ui stackable grid content-wrap">
@@ -147,13 +149,13 @@
                                         <div class="field">
                                             <div class="ui radio checkbox">
                                                 <input type="radio" id="c_ad" checked="" name="company_ad" value="0">
-                                                <label for="c_ad">Used</label>
+                                                <label for="c_ad">Used Car</label>
                                             </div>
                                         </div>
                                         <div class="field">
                                             <div class="ui radio checkbox">
                                                 <input type="radio" id="c_ad2" name="company_ad" value="1">
-                                                <label for="c_ad2">New</label>
+                                                <label for="c_ad2">New Car</label>
                                             </div>
                                         </div>
                                     </div>
@@ -213,162 +215,120 @@
                                     </select>
                                 </div>
                                 <!--/Form Field-->
-                                <!--Form Field-->
-                                <div class="three wide column required field">
-                                    <label>Category</label>
-                                </div>
-                                <div class="thirteen wide column field">
-                                    <select class="ui dropdown" name="category_group" id="category_group">
-                                        <option value="">All categories</option>
-                                        <option value="1000" style="background-color: rgb(220, 220, 195); font-weight: bold;" disabled="disabled" id="cat1000">
-                                            Real estate
-                                        </option>
-                                        <option value="1020" id="cat1020">
-                                            Houses
-                                        </option>
-                                        <option value="1010" id="cat1010">
-                                            Apartments
-                                        </option>
-                                        <option value="1030" id="cat1030">
-                                            Vacation homes
-                                        </option>
-                                        <option value="1050" id="cat1050">
-                                            Offices
-                                        </option>
-                                        <option value="1080" id="cat1080">
-                                            Land
-                                        </option>
-                                        <option value="1100" id="cat1100">
-                                            Flatmates/Paying Guest
-                                        </option>
-                                        <option value="1090" id="cat1090">
-                                            Other
-                                        </option>
-                                        <option value="2000" style="background-color: rgb(220, 220, 195); font-weight: bold;" disabled="disabled" id="cat2000">
-                                            Vehicles
-                                        </option>
-                                        <option value="2010" id="cat2010">
-                                            Cars
-                                        </option>
-                                        <option value="2030" id="cat2030">
-                                            Motorcycles
-                                        </option>
-                                        <option value="2040" id="cat2040">
-                                            Accessories &amp; parts
-                                        </option>
-                                        <option value="2080" id="cat2080">
-                                            Trucks
-                                        </option>
-                                        <option value="2070" id="cat2070">
-                                            Other vehicles
-                                        </option>
-                                        <option value="3000" style="background-color: rgb(220, 220, 195); font-weight: bold;" disabled="disabled" id="cat3000">
-                                            Home &amp; Personal items
-                                        </option>
-                                        <option value="3040" id="cat3040">
-                                            Home &amp; Garden
-                                        </option>
-                                        <option value="3050" id="cat3050">
-                                            Clothing
-                                        </option>
-                                        <option value="3030" id="cat3030">
-                                            For Kids (Toys &amp; Clothes)
-                                        </option>
-                                        <option value="3060" id="cat3060">
-                                            Jewelry &amp; Watches
-                                        </option>
-                                        <option value="4000" style="background-color: rgb(220, 220, 195); font-weight: bold;" disabled="disabled" id="cat4000">
-                                            Leisure, Sports &amp; hobby
-                                        </option>
-                                        <option value="4010" id="cat4010">
-                                            Hobbies
-                                        </option>
-                                        <option value="4020" id="cat4020">
-                                            Sports &amp; Bicycles
-                                        </option>
-                                        <option value="4040" id="cat4040">
-                                            Movies, Books &amp; Magazines
-                                        </option>
-                                        <option value="4030" id="cat4030">
-                                            Pets
-                                        </option>
-                                        <option value="4090" id="cat4090">
-                                            Tickets
-                                        </option>
-                                        <option value="4060" id="cat4060">
-                                            Art &amp; Collectibles
-                                        </option>
-                                        <option value="4070" id="cat4070">
-                                            Music &amp; Instruments
-                                        </option>
-                                        <option value="5000" style="background-color: rgb(220, 220, 195); font-weight: bold;" disabled="disabled" id="cat5000">
-                                            Electronics
-                                        </option>
-                                        <option value="5030" id="cat5030">
-                                            Computers &amp; Accessories
-                                        </option>
-                                        <option value="5020" id="cat5020">
-                                            TV, Audio, Video, Cameras
-                                        </option>
-                                        <option value="5010" id="cat5010">
-                                            Cellphones &amp; gadgets
-                                        </option>
-                                        <option value="5040" id="cat5040">
-                                            Video games &amp; consoles
-                                        </option>
-                                        <option value="6000" style="background-color: rgb(220, 220, 195); font-weight: bold;" disabled="disabled" id="cat6000">
-                                            Jobs &amp; Services
-                                        </option>
-                                        <option value="6010" id="cat6010">
-                                            Job offers
-                                        </option>
-                                        <option value="6020" id="cat6020">
-                                            Resumes
-                                        </option>
-                                        <option value="6030" id="cat6030">
-                                            Services
-                                        </option>
-                                        <option value="6040" id="cat6040">
-                                            Classes
-                                        </option>
-                                        <option value="6090" id="cat6090">
-                                            Professional/Office equipment
-                                        </option>
-                                        <option value="7000" style="background-color: rgb(220, 220, 195); font-weight: bold;" disabled="disabled" id="cat7000">
-                                            ----
-                                        </option>
-                                        <option value="7010" id="cat7010">
-                                            Other
-                                        </option>
-                                    </select>
-                                </div>
-                                <!--/Form Field-->
-                                <!--Form Field-->
-                                <div class="three wide column field">
-                                    <label>Type</label>
-                                </div>
-                                <div class="thirteen wide column">
-                                    <div id="type_container" class="inline fields">
-                                        <div class="field">
-                                            <div class="ui radio checkbox">
-                                                <input type="radio" id="for_sale" name="frequency" checked="checked">
-                                                <label for="for_sale">For sale</label>
-                                            </div>
-                                        </div>
-                                        <div class="field">
-                                            <div class="ui radio checkbox">
-                                                <input type="radio" id="wanted" name="frequency">
-                                                <label for="wanted">Want to buy</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--/Form Field-->
                             </div>
+							
+							<!--Form Field-->
+							<div class="ui grid">
+                                <div class="three wide column required field">
+                                    <label>Brand / Model</label>
+                                </div>
+								<div class="thirteen wide column field">
+                                    <select class="ui search dropdown" name="dropdown">
+										<option value="" selected="">Select Brand or Model</option>
+										<option value="maruti-swift">Maruti Swift</option>
+										<option value="maruti-swift-dzire">Maruti Swift Dzire</option>
+										<option value="hyundai-verna">Hyundai Verna</option>
+										<option value="toyota-innova">Toyota Innova</option>
+										<option value="honda-city">Honda City</option>
+										<option value="maruti">Maruti</option>
+										<option value="hyundai">Hyundai</option>
+										<option value="tata">Tata</option>
+										<option value="honda">Honda</option>
+										<option value="toyota">Toyota</option>
+										<option value="Mahindra">Mahindra</option>
+										<option value="Mahindra Ssangyong">Mahindra Ssangyong</option>
+										<option value="Mahindra Renault">Mahindra Renault</option>
+										<option value="Datsun">Datsun</option>
+										<option value="Ford">Ford</option>
+										<option value="Volkswagen">Volkswagen</option>
+										<option value="Skoda">Skoda</option>
+										<option value="Chevrolet">Chevrolet</option>
+										<option value="Mercedes Benz">Mercedes Benz</option>
+										<option value="Audi">Audi</option>
+										<option value="BMW">BMW</option>
+										<option value="Nissan">Nissan</option>
+										<option value="Renault">Renault</option>
+										<option value="Fiat">Fiat</option>
+										<option value="Volvo">Volvo</option>
+										<option value="Mitsubishi">Mitsubishi</option>
+										<option value="Jaguar">Jaguar</option>
+										<option value="Isuzu">Isuzu</option>
+										<option value="hoLand Rovernda">Land Rover</option>
+										<option value="Porsche">Porsche</option>
+										<option value="Opel">Opel</option>
+                                    </select>								
+								</div>
+							</div>
+							<!--/Form Field-->
+
+							<!--Form Field-->
+							<div class="ui grid">
+                                <div class="three wide column required field">
+                                    <label>Transmission</label>
+                                </div>
+								<div class="thirteen wide column field">
+                                    <select class="ui search dropdown" name="dropdown">
+										<option value="" selected="">Select Transmission</option>
+										<option value="auto">Auto</option>
+										<option value="manual">Manual</option>
+                                    </select>								
+								</div>
+							</div>
+							<!--/Form Field-->
+
+							<!--Form Field-->
+							<div class="ui grid">
+                                <div class="three wide column required field">
+                                    <label>Year Range</label>
+                                </div>
+								<div class="thirteen wide column field">
+                                    <select class="ui search dropdown" name="dropdown">
+										  <option name="from-year" value="" selected="">Manufacturing Year</option>
+										  <option name="from-year" value="Year 2001">2001</option>
+										  <option name="from-year" value="Year 2002">2002</option>
+										  <option name="from-year" value="Year 2003">2003</option>
+										  <option name="from-year" value="Year 2004">2004</option>
+										  <option name="from-year" value="Year 2005">2005</option>
+										  <option name="from-year" value="Year 2006">2006</option>
+										  <option name="from-year" value="Year 2007">2007</option>
+										  <option name="from-year" value="Year 2008">2008</option>
+										  <option name="from-year" value="Year 2009">2009</option>
+										  <option name="from-year" value="Year 2010">2010</option>
+										  <option name="from-year" value="Year 2011">2011</option>
+										  <option name="from-year" value="Year 2012">2012</option>
+										  <option name="from-year" value="Year 2013">2013</option>
+										  <option name="from-year" value="Year 2014">2014</option>
+										  <option name="from-year" value="Year 2015">2015</option>
+										  <option name="from-year" value="Year 2016">2016</option>
+										  <option name="from-year" value="Year 2017">2017</option> 
+                                    </select>								
+								</div>
+							</div>
+							<!--/Form Field-->
+
+							<!--Form Field-->
+							<div class="ui grid">
+                                <div class="three wide column required field">
+                                    <label>Price Range</label>
+                                </div>
+								<div class="thirteen wide column field">
+                                    <select class="ui search dropdown" name="dropdown">
+									  <option name="price-range" value="" selected="">Price Range</option>
+									  <option name="price-range" value="0 to 1 Lakhs">0 to ₹1 Lakh</option>
+									  <option name="price-range" value="1 to 2 Lakhs">₹1 Lakh to ₹2 Lakhs</option>
+									  <option name="price-range" value="2 to 3 Lakhs">₹2 Lakhs to ₹3 Lakhs</option>
+									  <option name="price-range" value="3 to 4 Lakhs">₹3 Lakhs to ₹4 Lakhs</option>
+									  <option name="price-range" value="4 to 5 Lakhs">₹4 Lakhs to ₹5 Lakhs</option>
+									  <option name="price-range" value="₹5 Lakhs Above">Above ₹5 Lakhs</option>
+                                    </select>								
+								</div>
+							</div>
+							<!--/Form Field-->
+							
                             <div class="ui grid" id="category_contents">
                                 <!--Form Field-->
                                 <div class="three wide column required field">
-                                    <label>Title</label>
+                                    <label>Ad Title</label>
                                 </div>
                                 <div class="thirteen wide column field">
                                     <input name="title" type="text">
@@ -379,26 +339,23 @@
                                     <label>Ad Content</label>
                                 </div>
                                 <div class="thirteen wide column field">
-                                    <textarea name="content" id="content" cols="45" rows="6"></textarea>
-                                </div>
-                                <!--/Form Field-->
-                                <!--Form Field-->
-                                <div class="three wide column field">
-                                    <label>Price</label>
-                                </div>
-                                <div class="thirteen wide column">
-                                    <div class="ui right labeled input">
-                                        <div class="ui label">Rs</div>
-                                        <input type="text" placeholder="Amount">
-                                        <div class="ui basic label">.00</div>
-                                    </div>
+									<div class="field" id="ad_content">
+										<!-- Create the editor container -->
+										<div id="snow-container">
+											<!--Message Goes Here-->
+											<p><strong>Hello,</strong></p>
+											<p>Insert your ad content here.</p>
+											<!--Message End Here-->
+										</div>
+										<!-- /Create the editor container -->	
+									</div>									
                                 </div>
                                 <!--/Form Field-->
                             </div>
                             <div class="ui grid">
                                 <!--Form Field-->
                                 <div class="three wide column field">
-                                    <label>Image</label>
+                                    <label>Car Photo 1</label>
                                 </div>
                                 <div class="thirteen wide column">
                                     <input name="image1" size="35" id="image1" type="file">
@@ -406,7 +363,7 @@
                                 <!--/Form Field-->
                                 <!--Form Field-->
                                 <div class="three wide column field">
-                                    <label>Image 2</label>
+                                    <label>Car Photo 2</label>
                                 </div>
                                 <div class="thirteen wide column">
                                     <input name="image2" size="35" id="image2" type="file">
@@ -414,7 +371,7 @@
                                 <!--/Form Field-->
                                 <!--Form Field-->
                                 <div class="three wide column field">
-                                    <label>Image 3</label>
+                                    <label>Car Photo 3</label>
                                 </div>
                                 <div class="thirteen wide column">
                                     <input name="image3" size="35" id="image3" type="file">
@@ -422,7 +379,7 @@
                                 <!--/Form Field-->
                                 <!--Form Field-->
                                 <div class="three wide column field">
-                                    <label>Image 4</label>
+                                    <label>Car Photo 4</label>
                                 </div>
                                 <div class="thirteen wide column">
                                     <input name="image4" size="35" id="image4" type="file">
@@ -430,11 +387,17 @@
                                 <!--/Form Field-->
                                 <!--Form Field-->
                                 <div class="three wide column field">
-                                    <label>Image 5</label>
+                                    <label>Car Photo 5</label>
                                 </div>
                                 <div class="thirteen wide column">
                                     <input name="image5" size="35" id="image5" type="file">
                                 </div>
+                                <div class="three wide column field">
+                                    <label>Car Photo 6</label>
+                                </div>
+                                <div class="thirteen wide column">
+                                    <input name="image5" size="35" id="image5" type="file">
+                                </div>								
                                 <!--/Form Field-->
                                 <!--Form Field-->
                                 <div class="three wide column required field">
@@ -469,7 +432,7 @@
                 <div class="four wide column">
                     <div class="ad-area-small">
                         <div class="googel-ad-small">
-                            <img class="ui centered image" src="images/googel_add_new.jpg">
+                            <img class="ui centered image" src="cars/images/car-banner-160x600.png">
                         </div>
                     </div>
                 </div>
@@ -512,49 +475,49 @@
             <div class="ui left aligned container">
                 <div class="ui stackable inverted divided grid">
                     <div class="three wide column">
-                        <h3 class="ui inverted header">CATEGORY</h3>
+                        <h3 class="ui inverted header">CARS BY MAKE</h3>
                         <div class="ui inverted link list">
-                            <a href="#" class="item">Astrology</a>
-                            <a href="#" class="item">Automobile</a>
-                            <a href="#" class="item">Babycare</a>
-                            <a href="#" class="item">Car</a>
-                            <a href="#" class="item">Computer</a>
-                            <a href="#" class="item">Electronics</a>
-                            <a href="#" class="item">Fashion</a>
+                            <a href="#" class="item">Maruti Suzuki Cars for Sale</a>
+                            <a href="#" class="item">Honda Cars for Sale</a>
+                            <a href="#" class="item">Toyota Cars for Sale</a>
+                            <a href="#" class="item">Hyundai Cars for Sale</a>
+                            <a href="#" class="item">Mahindra Cars for Sale</a>
+                            <a href="#" class="item">BMW Cars for Sale</a>
+                            <a href="#" class="item">Nissan Cars for Sale</a>					
                         </div>
                     </div>
                     <div class="three wide column">
-                        <h3 class="ui inverted header">BRANDS</h3>
+                        <h3 class="ui inverted header">CARS BY CITY</h3>
                         <div class="ui inverted link list">
-                            <a href="#" class="item">Apple</a>
-                            <a href="#" class="item">ASUS</a>
-                            <a href="#" class="item">Blackberry</a>
-                            <a href="#" class="item">Bacca Bucci</a>
-                            <a href="#" class="item">Canon</a>
-                            <a href="#" class="item">Celkon</a>
-                            <a href="#" class="item">Dell</a>
+                            <a href="#" class="item">Cars in Hyderabad</a>
+                            <a href="#" class="item">Cars in Chennai</a>
+                            <a href="#" class="item">Cars in Banglore</a>
+                            <a href="#" class="item">Cars in Trivendrum</a>
+                            <a href="#" class="item">Cars in Delhi</a>
+                            <a href="#" class="item">Cars in Kolkata</a>
+                            <a href="#" class="item">Cars in Mumbai</a>
                         </div>
                     </div>
                     <div class="three wide column">
-                        <h3 class="ui inverted header">MOBILE PHONES</h3>
+                        <h3 class="ui inverted header">QUICK LINKS</h3>
                         <div class="ui inverted link list">
-                            <a href="#" class="item">Mobile Phones</a>
-                            <a href="#" class="item">Android Phones</a>
-                            <a href="#" class="item">Multi Sim Phones</a>
-                            <a href="#" class="item">Phablets</a>
-                            <a href="#" class="item">Top Selling Mobile Phones</a>
-                            <a href="#" class="item">Micromax</a>
+                            <a href="#" class="item">FAQs</a>
+                            <a href="#" class="item">About Us</a>
+                            <a href="#" class="item">Advertise</a>
+                            <a href="#" class="item">Contact Us</a>
+                            <a href="#" class="item">Post an Ad</a>
+                            <a href="#" class="item">Privacy Policy</a>
                         </div>
                     </div>
                     <div class="three wide column">
-                        <h3 class="ui inverted header">INFORMATION</h3>
+                        <h3 class="ui inverted header">HELP CENTER</h3>
                         <div class="ui inverted link list">
-                            <a href="#" class="item">Popular searches</a>
-                            <a href="#" class="item">Archive</a>
-                            <a href="#" class="item">Sitemap</a>
-                            <a href="#" class="item">Featured Ads</a>
-                            <a href="#" class="item">Terms of Use</a>
-                            <a href="#" class="item">Help & Contact Use		</a>
+                            <a href="#" class="item">Be aware of FAKE ADS</a>
+                            <a href="#" class="item">Account Issue</a>
+                            <a href="#" class="item">Premium Membership</a>
+                            <a href="#" class="item">Tips for Buy Car</a>
+                            <a href="#" class="item">Help & Support</a>
+                            <a href="#" class="item">Terms of Services</a>
                         </div>
                     </div>
                     <div class="four wide column">
@@ -572,7 +535,7 @@
         <!--Copyright-->
         <div class="ui inverted vertical copyright center aligned segment">
             <div class="ui horizontal inverted small divided link list">
-                <a class="item" href="#">&copy; 2016 Kool Business </a>
+                <a class="item" href="#">&copy; 2008 - 2018 Kool Business </a>
             </div>
         </div>
         <!--/Copyright End-->
@@ -585,4 +548,25 @@
         <!--Scroll-To-Top End-->
     </div>
     <!--/Main Wrapper End-->
+	<!-- Include the Quill library -->
+	<script src="https://cdn.quilljs.com/1.3.3/quill.js"></script>
+
+	<!-- Initialize Quill editor -->
+	<script>
+		var snowQuill = new Quill('#snow-container', {
+			placeholder: 'Compose an epic...',
+			modules: {
+			  toolbar: [
+				[{ header: [] }],
+				['bold', 'italic', 'underline', 'link'],
+				[{ align: ['','right','center','justify']}],
+				[{ list: 'ordered' }, { list: 'bullet' }],				
+				[{ color: [] }, { background: [] }],				
+				['clean']
+			  ]
+			},
+			theme: 'snow'
+		  });
+	</script>	
 </body>
+</html>
