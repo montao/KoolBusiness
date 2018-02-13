@@ -14,6 +14,8 @@
     <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
     <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.css">
     <link rel="stylesheet" type="text/css" href="assets/css/owl.theme.min.css">
+	<!-- Include Quill CSS -->
+	<link href="https://cdn.quilljs.com/1.3.3/quill.snow.css" rel="stylesheet">
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/semantic.js"></script>
     <script src="assets/js/owl.carousel.js"></script>
@@ -38,10 +40,8 @@
             <div class="ui container">
                 <div class="ui stackable divided grid">
                     <div class="eight wide column">
-                        <div class="flag-icons">
-                            <strong>SELECT LANGUAGE:</strong>
-                            <i class="united kingdom flag"></i><a class="ui" href="#">English</a>
-                            <i class="india flag"></i><a class="ui item-inline" href="#"><img class="ui image" src="images/hindi-language.png"></a>
+                        <div class="welcome-msg">
+                            Welcome to <strong>KoolBusiness </strong> <span>- High Quality Classifieds in INDIA.</span>
                         </div>
                     </div>
                     <div class="eight wide column right aligned">
@@ -372,7 +372,7 @@
                             <div class="ui grid" id="category_contents">
                                 <!--Form Field-->
                                 <div class="three wide column required field">
-                                    <label>Title</label>
+                                    <label>Ad Title</label>
                                 </div>
                                 <div class="thirteen wide column field">
                                     <input name="title" type="text">
@@ -383,8 +383,18 @@
                                     <label>Ad Content</label>
                                 </div>
                                 <div class="thirteen wide column field">
-                                    <textarea name="content" id="content" cols="45" rows="6"></textarea>
+									<div class="field" id="ad_content">
+										<!-- Create the editor container -->
+										<div id="snow-container">
+											<!--Message Goes Here-->
+											<p><strong>Hello,</strong></p>
+											<p>Insert your ad content here.</p>
+											<!--Message End Here-->
+										</div>
+										<!-- /Create the editor container -->	
+									</div>									
                                 </div>
+                                <!--/Form Field-->
                                 <!--/Form Field-->
                                 <!--Form Field-->
                                 <div class="three wide column field">
@@ -402,7 +412,7 @@
                             <div class="ui grid">
                                 <!--Form Field-->
                                 <div class="three wide column field">
-                                    <label>Image</label>
+                                    <label>Image 1</label>
                                 </div>
                                 <div class="thirteen wide column">
                                     <input name="image1" size="35" id="image1" type="file">
@@ -589,6 +599,25 @@
         <!--Scroll-To-Top End-->
     </div>
     <!--/Main Wrapper End-->
-</body>
+	<!-- Include the Quill library -->
+	<script src="https://cdn.quilljs.com/1.3.3/quill.js"></script>
 
+	<!-- Initialize Quill editor -->
+	<script>
+		var snowQuill = new Quill('#snow-container', {
+			placeholder: 'Compose an epic...',
+			modules: {
+			  toolbar: [
+				[{ header: [] }],
+				['bold', 'italic', 'underline', 'link'],
+				[{ align: ['','right','center','justify']}],
+				[{ list: 'ordered' }, { list: 'bullet' }],				
+				[{ color: [] }, { background: [] }],				
+				['clean']
+			  ]
+			},
+			theme: 'snow'
+		  });
+	</script>	
+</body>
 </html>
