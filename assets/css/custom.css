@@ -1504,6 +1504,9 @@ animated buttons - animate the text inside prev and next buttons
     top: 46px;
     right: 15px;
 }
+.ui.breadcrumb {
+	margin: 1rem 0 0;
+}
 #my_singlepage .ui.icon.message {
 	border: 0;
 	background-color: #ffffff;
